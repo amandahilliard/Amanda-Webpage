@@ -10,10 +10,11 @@
 </head>
 
 <style>
-    .nav-pills .nav-link.active{
+      .nav-pills .nav-link.active{
         color: #104F55;
         background-color: #D55672;
         font-size: 20px; 
+        margin-bottom: 5px;
     }
     .nav-link{
         color: #6CCFF6;
@@ -24,6 +25,12 @@
         background-color: #0F0326;
         color: #D55672;
         margin-top: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    img{
+        margin: auto;
     }
 </style>
 <body>
@@ -43,7 +50,9 @@
 </nav>
 
 <footer>
-    <h3>Thank you for visiting my page!</h3>
+    <img class="d-md-inline-block d-none" src="https://i.picsum.photos/id/82/100/100.jpg?hmac=UzDQAI2ZgSXIgLKvv_1gG35Nc70rnbTkHH0YErEb8C8">
+        <h3 class="text-center">Thank you for visiting my page!</h3>
+    <img class="d-md-inline-block d-none" src="https://i.picsum.photos/id/82/100/100.jpg?hmac=UzDQAI2ZgSXIgLKvv_1gG35Nc70rnbTkHH0YErEb8C8">
 </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 

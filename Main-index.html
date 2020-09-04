@@ -14,6 +14,7 @@
         color: #104F55;
         background-color: #D55672;
         font-size: 20px; 
+        margin-bottom: 5px;
     }
     .nav-link{
         color: #6CCFF6;
@@ -24,6 +25,48 @@
         background-color: #0F0326;
         color: #D55672;
         margin-top: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    img{
+        margin: auto;
+    }
+    .content-container{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .container1{
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #6CCFF6;
+        margin: 5px;
+        flex-basis: calc(70% - 10px)
+    }
+    .container2{
+        display: flex;
+        flex-flow: column;
+        background-color:#DEC1FF;
+        margin: 5px;
+        flex-basis: calc(30% - 10px)
+    }
+    .blue-box{
+        background-color: #0F0326;
+        display: flex;
+        flex-flow: row;
+        margin: 5px;
+        flex-basis: calc(100% / 3 - 10px);
+        min-height: 100px;
+        color: white;
+    }
+    .red-box{
+        background-color: crimson;
+        display: flex;
+        flex-flow: column;
+        margin: 5px;
+        flex-basis: calc(100% - 10px);
+        min-width: 75px;
+        color: white;
     }
 </style>
 <body>
@@ -42,8 +85,51 @@
       </ul>
 </nav>
 
+<section class="content-container container-fluid">
+    <div class="main-container row">
+        <div class="container1 col-md-9 col-12">
+            <div class="blue-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="blue-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="blue-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="blue-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="blue-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="blue-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="blue-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="blue-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="blue-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="blue-box">1Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+        </div>
+    </div>
+    <div class="main-container row">
+        <div class="container2 col-md-3 col-12">        
+            <div class="red-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="red-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="red-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="red-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+            <div class="red-box">Aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus</div>
+        </div>
+    </div>
+</section>
+
 <footer>
-    <h3>Thank you for visiting my page!</h3>
+    <img class="d-md-inline-block d-none" src="https://i.picsum.photos/id/82/100/100.jpg?hmac=UzDQAI2ZgSXIgLKvv_1gG35Nc70rnbTkHH0YErEb8C8">
+        <h3 class="text-center">Thank you for visiting my page!</h3>
+    <img class="d-md-inline-block d-none" src="https://i.picsum.photos/id/82/100/100.jpg?hmac=UzDQAI2ZgSXIgLKvv_1gG35Nc70rnbTkHH0YErEb8C8">
 </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
