@@ -6,7 +6,7 @@
     <title>Contact Me</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -32,6 +32,23 @@
     img{
         margin: auto;
     }
+    .form-container{
+        background-color: #dEC1FF;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        margin-left: 20px;
+        color: #0f0326;
+        font-family: 'Abril Fatface', cursive;
+    }
+    .form-control{
+        background-color: #6ccff6;
+    }
+    .btn{
+        background-color: #0f0326;
+        font-family: 'Abril Fatface', cursive;
+        color: #6ccff6;
+    }
 </style>
 <body>
 
@@ -49,6 +66,56 @@
       </ul>
 </nav>
 
+<form class="form-container">
+    <div class="form-group row">
+      <label for="inputName3" class="col-sm-2 col-form-label text-center">Full Name</label>
+      <div class="col-sm-10">
+        <input type="Name" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label text-center">Email</label>
+      <div class="col-sm-10">
+        <input type="Email" class="form-control" id="inputPassword3">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="Comments1" class="col-sm-2 col-form-label text-center">Comments</label>
+        <div class="col-sm-10">
+        <textarea class="form-control" id="Comments1" rows="3"></textarea>
+        </div>
+      </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0 text-center">Reason For Contact</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Question
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Suggestion
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+            <label class="form-check-label" for="gridRadios3">
+              Complaint
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <div class="col-lg-10">
+        <button type="submit" style="float:right" class="btn btn-primary btn-lg">Submit</button>
+      </div>
+    </div>
+  </form>
 <footer>
     <img class="d-md-inline-block d-none" src="https://i.picsum.photos/id/82/100/100.jpg?hmac=UzDQAI2ZgSXIgLKvv_1gG35Nc70rnbTkHH0YErEb8C8">
         <h3 class="text-center">Thank you for visiting my page!</h3>

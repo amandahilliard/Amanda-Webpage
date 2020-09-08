@@ -6,7 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+        <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -32,13 +32,50 @@
     img{
         margin: auto;
     }
+    
+    .list-container{
+        background-color: #0f0326;
+        color: #d55672;
+        margin: 5px;
+        width: auto;
+        flex: 0 0 auto;
+    }
+    .img-container{
+        display: flex;
+        flex-flow: row wrap;
+        flex-basis: calc(85% - 10px);
+        background-color: #6CCFF6;
+        color: #0F0326;
+        margin: 5px;
+    }
+    .blue-box{
+        background-color: #d55672;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 5px;
+        flex-basis: 100%;
+        min-height: 100px;
+        font-family: 'Gayathri', sans-serif;
+    }
+    .link-box{
+        background-color: #104f55;
+        margin: 5px;
+    }
+    .thumbnail:hover{
+        position:relative;
+        top:-25px;
+        left:-35px;
+        width:100px;
+        height:auto;
+        display:block;  
+    }
 </style>
 <body>
 
 <nav>
     <ul class="nav nav-pills nav-fill">
         <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
+          <a class="nav-link" href="#" id="toplink">About Me</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#">Portfolio</a>
@@ -48,6 +85,118 @@
         </li>
       </ul>
 </nav>
+
+<section class="main-container row">
+    <div class="list-container col-auto">
+        <div class="link-box">
+            <a href="#cloudpic" title="In Page Anchor">Item 1</a>
+        </div>
+        <div class="link-box">
+            <a href="#citypic" title="In Page Anchor">Item 2</a>
+        </div>
+        <div class="link-box">
+            <a href="#cellpic" title="In Page Anchor">Item 3</a>
+        </div>
+        <div class="link-box">
+            <a href="#flowerpic" title="In Page Anchor">Item 4</a>
+        </div>
+        <div class="link-box">
+            <a href="#bowlpic" title="In Page Anchor">Item 5</a>
+        </div>
+        <div class="link-box">
+            <a href="#mountainpic" title="In Page Anchor">Item 6</a>
+        </div>
+        <div class="link-box">
+            <a href="#wavepic" title="In Page Anchor">Item 7</a>
+        </div>
+        <div class="link-box">
+            <a href="#sunsetpic" title="In Page Anchor">Item 8</a>
+        </div>
+        <div class="link-box">
+            <a href="#trainpic" title="In Page Anchor">Item 9</a>
+        </div>
+        <div class="link-box">
+            <a href="#sunpeekpic" title="In Page Anchor">Item 10</a>
+        </div>
+    </div>
+    <div class="img-container">
+        <div class="blue-box media" id="cloudpic">
+            <img src="https://i.picsum.photos/id/562/50/50.jpg?hmac=-coUSvoXl4ko-pD67t0wwxHDgchfrStHbufQohdoD2U" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit. Praesent quis ullamcorper lacus. Morbi laoreet iaculis luctus. 
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+        <div class="blue-box media" id="citypic">
+            <img src="https://i.picsum.photos/id/274/50/50.jpg?hmac=wd1V_89I-BBmuYYXuHgJujEmwilyBN6LcQ8EkR--umM" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit. 
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+        <div class="blue-box media" id="cellpic">
+            <img src="https://i.picsum.photos/id/816/50/50.jpg?hmac=kqLFsPlkf9L6OJY9vET4kyHFHKVAe6mXvpzHgLWAD18" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit. Praesent quis ullamcorper lacus. Morbi laoreet iaculis luctus. Nuncsem metus, aliquet porta massa at, volutpat accumsan quam. Nulla metus lorem, mattis sit amet
+                augueeget, cursus imperdiet ligula. Curabitur congue dui at quam semper, quis viverra loremscelerisque.
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+        <div class="blue-box media" id="flowerpic">
+            <img src="https://i.picsum.photos/id/360/50/50.jpg?hmac=9VMl8yUZV57FRJnpbmJBUjqRA4YtIKfpEDckGgj8eUw" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit. Praesent quis ullamcorper lacus. Morbi laoreet iaculis luctus. Nuncsem metus, aliquet porta massa at, volutpat accumsan quam. Nulla metus lorem, mattis sit amet
+                augueeget, cursus imperdiet ligula. 
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+        <div class="blue-box media" id="bowlpic">
+            <img src="https://i.picsum.photos/id/326/50/50.jpg?hmac=VT5ofpk0aPaZTtVqrBoQVwuW3GDGwIefl4Dk5lP2oFI" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit. Praesent quis ullamcorper lacus. Morbi laoreet iaculis luctus. 
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+        <div class="blue-box media" id="mountainpic">
+            <img src="https://i.picsum.photos/id/377/50/50.jpg?hmac=8OLFgfrHLN-76zV3djp_3ExLMDGw-3cppkKy7RZM43w" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit.
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+        <div class="blue-box media" id="wavepic">
+            <img src="https://i.picsum.photos/id/404/50/50.jpg?hmac=--K-2jMOyHFoljtCs1LTaVYkURht6vnP2YhqPObCTPA" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit. Praesent quis ullamcorper lacus. Morbi laoreet iaculis luctus. Nuncsem metus, aliquet porta massa at, volutpat accumsan quam. Nulla metus lorem, mattis sit amet
+                augueeget, cursus imperdiet ligula. Curabitur congue dui at quam semper, quis viverra loremscelerisque.
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+        <div class="blue-box media" id="sunsetpic">
+            <img src="https://i.picsum.photos/id/320/50/50.jpg?hmac=jRS2X1gtHTD3FGSHq4y4qxPbgc49QRJgxqbLqMyqBzY" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit. Praesent quis ullamcorper lacus. Morbi laoreet iaculis luctus. Nuncsem metus, aliquet porta massa at, volutpat accumsan quam. Nulla metus lorem, mattis sit amet
+                augueeget, cursus imperdiet ligula. 
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+        <div class="blue-box media" id="trainpic">
+            <img src="https://i.picsum.photos/id/69/50/50.jpg?hmac=l46JjwP8HuXdUTx7CyNFvJCqQ2WU0fHXhK8QbfL-oDA" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit. 
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+        <div class="blue-box media" id="sunpeekpic">
+            <img src="https://i.picsum.photos/id/1019/50/50.jpg?hmac=nezqYaHPtwiujiRQ7ekRrDZu7Tp8qRSZaS9BGB3bMfE" class="align-self-start mr-3 thumbnail" width="50px" height="50px">
+                <div class="media-body text-wrap">aliquam venenatis semper dui at faucibus. Nunc pulvinar, lacus in consequat consectetur, sem
+                risus convallis massa, sit amet finibus massa risus sit amet elit. Praesent quis ullamcorper lacus. Morbi laoreet iaculis luctus. Nuncsem metus, aliquet porta massa at, volutpat accumsan quam. Nulla metus lorem, mattis sit amet
+                augueeget, cursus imperdiet ligula. Curabitur congue dui at quam semper, quis viverra loremscelerisque.
+                <a href="#toplink" title="In Page Anchor">Back To Top</a>
+                </div>
+        </div>
+    </div>
+</section>
 
 <footer>
     <img class="d-md-inline-block d-none" src="https://i.picsum.photos/id/82/100/100.jpg?hmac=UzDQAI2ZgSXIgLKvv_1gG35Nc70rnbTkHH0YErEb8C8">
